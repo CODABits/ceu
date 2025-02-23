@@ -7281,7 +7281,12 @@ h3 {
   .masthead .masthead-subheading {
     font-size: 1.25rem; }
   .masthead .masthead-avatar {
-    width: 15rem; }
+    width: 15rem; 
+      height: 15rem; /* Asegura que sea un círculo perfecto */
+      border-radius: 50%; /* Hace la imagen circular */
+      object-fit: cover; /* Ajusta la imagen dentro del círculo sin deformarla */
+      border: 3px solid #fff; /* (Opcional) Añade un borde blanco para resaltar */
+  }
 
 @media (min-width: 992px) {
   .masthead {
